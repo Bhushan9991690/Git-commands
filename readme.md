@@ -78,49 +78,46 @@ It is used to check which lines we changes or newly write or modified
     - [master 7365675] commit V2
     - 1 file changed, 48 insertions(+), 1 deletion(-)
 
-5.  command :->  git log
+5.  command :-> git log
 
 - commit 7365675ad0c4b1c5f3c0727eb55f9a0a38e1157f (HEAD -> master)
 - Author: Bhushan kumar <godwaha2003@gmail.com>
 - Date: Wed Jul 30 10:36:48 2025 +0530
+  commit V2
 
-    commit V2
+- commit 5a264bcccda70d81daa96d4839350185ef578d17
+- Author: Bhushan kumar <godwaha2003@gmail.com>
+- Date: Wed Jul 30 10:13:03 2025 +0530
 
- - commit 5a264bcccda70d81daa96d4839350185ef578d17
- - Author: Bhushan kumar <godwaha2003@gmail.com>
- - Date: Wed Jul 30 10:13:03 2025 +0530
-
-    First v1 commit
+  First v1 commit
 
 # ------------ Practice Session End -------------------
 
+# command :-> git show 5a264bcccda70d81daa96d4839350185ef578d17:readme.md
 
+- Ishme hamma agar yeah dekha hai kii mera phela commit meh code
+  kya tha toh hum ish command ka use karraga
 
-#  command :-> git show 5a264bcccda70d81daa96d4839350185ef578d17:readme.md
+- ishme git show (id):fileName
 
- - Ishme hamma agar yeah dekha hai kii mera phela commit meh code 
-   kya tha toh hum ish command ka use karraga
-
- - ishme git show (id):fileName
-
- - Jish commit koo dekna hai ushkii id and ushka under 
-   jis file koo check karna hai ushka fileName
+- Jish commit koo dekna hai ushkii id and ushka under
+  jis file koo check karna hai ushka fileName
 
 # command checkout
+
 1.  command :-> git checkout 5a264bcccda70d81daa96d4839350185ef578d17 -- readme.md
-2.  command :-> git checkout 5a264bcccda70d81daa96d4839350185ef578d17 -- *
+2.  command :-> git checkout 5a264bcccda70d81daa96d4839350185ef578d17 -- \*
 
 if we want to see the code of any version in our vs code File we use these commands
 
 - If we want to see any version specific file we use command 1.
 - But If we want to see all files of any version we use command 2.
 
-3. command :-> git checkout master -- *
-  
-  - if we want to go again our working code that we worked in present we use this command
+3. command :-> git checkout master -- \*
+
+- if we want to go again our working code that we worked in present we use this command
 
 NOTE :-> All changes sees us in Files not in Terminal Ok
-
 
 # ----------- Negative test cases ---------------
 
@@ -128,3 +125,21 @@ NOTE :-> All changes sees us in Files not in Terminal Ok
 
 1. For all, command :-> git restore .
 2. For indivdual, command :-> git restore
+
+Suppose we made an mistake in any file of code and want again back code that was last committed , You can restore that code using these commands
+
+# command :->
+
+- Suppose we made some changes and run command "git add ." , Further we see that
+  the changes we made some of them are incorrect (Stagging area bolte hai ishe)
+
+  - But we fire the command -> git add .
+
+  - Now in this condition we Revert this command by using
+
+   command :-> git restored --staged .
+
+  - Ish command seh hogga yeah joh files stagging area meh challa gayi thi voh 
+    wappis aa jaya gi
+  - Then hum wapis "git restore ." command ka use karke apna previous version par 
+    aa jaya  geah
