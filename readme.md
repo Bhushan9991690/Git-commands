@@ -17,3 +17,50 @@
 
 # command :-> git status
  - It tell us which file or folder not add yet
+ - Shows in Red color
+
+# command :-> git add .
+ - Now it shows filder or folder which is now added
+ - Shows in Green color
+
+# command :- git commit -m "First v1 commit"
+  - [master (root-commit) 5a264bc] First v1 commit
+  - 1 file changed, 19 insertions(+)
+  - create mode 100644 readme.md
+
+  Yaha hamma dekhna koo mila kii ham jis Branch par hai voo Master branch hai 
+  - [master (root-commit) 5a264bc] 
+
+# command :- git branch
+ - It used to check we are on which branch 
+ - * master
+
+# command :- git log
+    It is used to check which user done commit and what  
+
+  - commit 5a264bcccda70d81daa96d4839350185ef578d17 (HEAD -> master)
+  - Author: Bhushan kumar <godwaha2003@gmail.com>
+  - Date:   Wed Jul 30 10:13:03 2025 +0530
+
+      First v1 commit
+
+
+# ------------ Practice Session -------------------
+
+We changes some lines in our code ok
+
+1. we used command :-> git status
+  
+ - On branch master
+ - Changes not staged for commit:
+ - (use "git add <file>..." to update what will be committed)
+ - (use "git restore <file>..." to discard changes in working directory)
+ -  modified:   readme.md
+
+ Here "modified:   readme.md"  this was written in red text 
+
+ Which shows us that readme.md file meh kuch modify kiya gaya hai.
+
+ 2. we used command :-> git diff 
+   
+   It is used to check which lines we changes or newly write or modified
