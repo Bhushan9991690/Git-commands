@@ -29,3 +29,6 @@
 6. git branch main
 
 7. git merge design
+
+
+# ----------------- Merge conflict -----------
