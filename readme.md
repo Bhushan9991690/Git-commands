@@ -227,3 +227,9 @@ we can also use or mostly use this in major commits
  this command
 
 5. Also more , go on video (timeline 50:50)
+
+# command :-> git pull
+
+  we use mostly "git push -u origin main" to send data to remote
+
+  But If we want to get cahnges from the remote we use " git pull " command
