@@ -9,58 +9,99 @@
 
 --> For exist press -> (q)
 
-# command :->  ls -la
-   - total 9
-   - drwxr-xr-x 1 My PC 197121   0 Jul 30 10:03 ./
-   - drwxr-xr-x 1 My PC 197121   0 Jul 30 09:22 ../
-   - drwxr-xr-x 1 My PC 197121   0 Jul 30 10:03 .git/
+# command :-> ls -la
+
+- total 9
+- drwxr-xr-x 1 My PC 197121 0 Jul 30 10:03 ./
+- drwxr-xr-x 1 My PC 197121 0 Jul 30 09:22 ../
+- drwxr-xr-x 1 My PC 197121 0 Jul 30 10:03 .git/
 
 # command :-> git status
- - It tell us which file or folder not add yet
- - Shows in Red color
+
+- It tell us which file or folder not add yet
+- Shows in Red color
 
 # command :-> git add .
- - Now it shows filder or folder which is now added
- - Shows in Green color
+
+- Now it shows filder or folder which is now added
+- Shows in Green color
 
 # command :- git commit -m "First v1 commit"
-  - [master (root-commit) 5a264bc] First v1 commit
-  - 1 file changed, 19 insertions(+)
-  - create mode 100644 readme.md
 
-  Yaha hamma dekhna koo mila kii ham jis Branch par hai voo Master branch hai 
-  - [master (root-commit) 5a264bc] 
+- [master (root-commit) 5a264bc] First v1 commit
+- 1 file changed, 19 insertions(+)
+- create mode 100644 readme.md
+
+Yaha hamma dekhna koo mila kii ham jis Branch par hai voo Master branch hai
+
+- [master (root-commit) 5a264bc]
 
 # command :- git branch
- - It used to check we are on which branch 
- - * master
+
+- It used to check we are on which branch
+- - master
 
 # command :- git log
-    It is used to check which user done commit and what  
 
-  - commit 5a264bcccda70d81daa96d4839350185ef578d17 (HEAD -> master)
-  - Author: Bhushan kumar <godwaha2003@gmail.com>
-  - Date:   Wed Jul 30 10:13:03 2025 +0530
+    It is used to check which user done commit and what
 
-      First v1 commit
+- commit 5a264bcccda70d81daa96d4839350185ef578d17 (HEAD -> master)
+- Author: Bhushan kumar <godwaha2003@gmail.com>
+- Date: Wed Jul 30 10:13:03 2025 +0530
 
+  First v1 commit
 
 # ------------ Practice Session -------------------
 
 We changes some lines in our code ok
 
 1. we used command :-> git status
-  
- - On branch master
- - Changes not staged for commit:
- - (use "git add <file>..." to update what will be committed)
- - (use "git restore <file>..." to discard changes in working directory)
- -  modified:   readme.md
 
- Here "modified:   readme.md"  this was written in red text 
+- On branch master
+- Changes not staged for commit:
+- (use "git add <file>..." to update what will be committed)
+- (use "git restore <file>..." to discard changes in working directory)
+- modified: readme.md
 
- Which shows us that readme.md file meh kuch modify kiya gaya hai.
+Here "modified: readme.md" this was written in red text
 
- 2. we used command :-> git diff 
-   
-   It is used to check which lines we changes or newly write or modified
+Which shows us that readme.md file meh kuch modify kiya gaya hai.
+
+2.  we used command :-> git diff
+
+It is used to check which lines we changes or newly write or modified
+
+3.  git add .
+
+4.  command :-> git commit -m "commit V2"
+
+    - [master 7365675] commit V2
+    - 1 file changed, 48 insertions(+), 1 deletion(-)
+
+5.  command :->  git log
+
+- commit 7365675ad0c4b1c5f3c0727eb55f9a0a38e1157f (HEAD -> master)
+- Author: Bhushan kumar <godwaha2003@gmail.com>
+- Date: Wed Jul 30 10:36:48 2025 +0530
+
+    commit V2
+
+ - commit 5a264bcccda70d81daa96d4839350185ef578d17
+ - Author: Bhushan kumar <godwaha2003@gmail.com>
+ - Date: Wed Jul 30 10:13:03 2025 +0530
+
+    First v1 commit
+
+# ------------ Practice Session End -------------------
+
+
+
+#  command :-> git show 5a264bcccda70d81daa96d4839350185ef578d17:readme.md
+
+ - Ishme hamma agar yeah dekha hai kii mera phela commit meh code 
+   kya tha toh hum ish command ka use karraga
+
+ - ishme git show (id):fileName
+
+ - Jish commit koo dekna hai ushkii id and ushka under 
+   jis file koo check karna hai ushka fileName
