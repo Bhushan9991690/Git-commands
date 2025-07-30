@@ -19,3 +19,12 @@
     
       main
      * working
+
+5. In these we added some another file and the process of commit is same
+
+  - git add .
+  - git commit -m "Added working file"
+
+6. git branch main
+
+7. git merge design
