@@ -105,3 +105,26 @@ It is used to check which lines we changes or newly write or modified
 
  - Jish commit koo dekna hai ushkii id and ushka under 
    jis file koo check karna hai ushka fileName
+
+# command checkout
+1.  command :-> git checkout 5a264bcccda70d81daa96d4839350185ef578d17 -- readme.md
+2.  command :-> git checkout 5a264bcccda70d81daa96d4839350185ef578d17 -- *
+
+if we want to see the code of any version in our vs code File we use these commands
+
+- If we want to see any version specific file we use command 1.
+- But If we want to see all files of any version we use command 2.
+
+3. command :-> git checkout master -- *
+  
+  - if we want to go again our working code that we worked in present we use this command
+
+NOTE :-> All changes sees us in Files not in Terminal Ok
+
+
+# ----------- Negative test cases ---------------
+
+# command :-> git restore
+
+1. For all, command :-> git restore .
+2. For indivdual, command :-> git restore
