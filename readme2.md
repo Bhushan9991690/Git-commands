@@ -24,9 +24,11 @@
 
   - git add .
   - git commit -m "Added working file"
+  - git push origin working
 
 6. git branch main
 
-7. git merge design (It is done on the main branch)
+7. git merge design
 
-# ---------------- Git conflict -----------
+
+# ----------------- Merge conflict -----------
