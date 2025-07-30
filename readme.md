@@ -121,14 +121,16 @@ NOTE :-> All changes sees us in Files not in Terminal Ok
 
 # ----------- Negative test cases ---------------
 
-# command :-> git restore
+# CASE-A command :-> git restore
 
 1. For all, command :-> git restore .
 2. For indivdual, command :-> git restore
 
 Suppose we made an mistake in any file of code and want again back code that was last committed , You can restore that code using these commands
 
-# command :->
+# CASE-B  
+
+ - - Added wrong files, by command -> git add .
 
 - Suppose we made some changes and run command "git add ." , Further we see that
   the changes we made some of them are incorrect (Stagging area bolte hai ishe)
@@ -137,9 +139,47 @@ Suppose we made an mistake in any file of code and want again back code that was
 
   - Now in this condition we Revert this command by using
 
-   command :-> git restored --staged .
+  command :-> git restored --staged .
 
-  - Ish command seh hogga yeah joh files stagging area meh challa gayi thi voh 
+  - Ish command seh hogga yeah joh files stagging area meh challa gayi thi voh
     wappis aa jaya gi
-  - Then hum wapis "git restore ." command ka use karke apna previous version par 
-    aa jaya  geah
+  - Then hum wapis "git restore ." command ka use karke apna previous version par
+    aa jaya geah
+
+# CASE-B prctice session
+
+1.  command :-> git add .
+
+2.  command :-> git status
+
+    (Shows in Green Color)
+
+    - On branch master
+    - Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+      modified: readme.md
+
+3.  command :-> git restore --staged .
+
+4.  command :-> git status
+
+    (Shows in REd Color again )
+
+    - On branch master
+    - Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+      modified: readme.md
+
+    - no changes added to commit (use "git add" and/or "git commit -a")
+
+    - NOTE :- If shows in green color means it is staged , but shows in red color
+      means not staged or t=return fro the staged area
+
+    - IMPORTANT NOTE :- NOW WE CAN AGAIN REACH TO OUR LAST VERSION USING
+      COMMAND :-> git restore .
+
+# CASE-C ( TIMELINE -> 40.14 )
+
+# CASE-D 
+ - commit wrong files 
