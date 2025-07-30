@@ -128,9 +128,9 @@ NOTE :-> All changes sees us in Files not in Terminal Ok
 
 Suppose we made an mistake in any file of code and want again back code that was last committed , You can restore that code using these commands
 
-# CASE-B  
+# CASE-B
 
- - - Added wrong files, by command -> git add .
+- - Added wrong files, by command -> git add .
 
 - Suppose we made some changes and run command "git add ." , Further we see that
   the changes we made some of them are incorrect (Stagging area bolte hai ishe)
@@ -181,5 +181,49 @@ Suppose we made an mistake in any file of code and want again back code that was
 
 # CASE-C ( TIMELINE -> 40.14 )
 
-# CASE-D 
- - commit wrong files 
+# CASE-D
+
+- commit wrong files .
+
+1.  git reset --hard HEAD^ (uncommit & discard the changes)
+2.  git reset --soft HEAD^ (uncommit & keep the changes)
+
+# ----------- Negative test cases End ---------------
+
+# command :- git log
+
+we can also use or mostly use this in major commits
+
+1. git log --pretty=online
+
+  It shows like this -
+
+  3a065b264dfb92993532f84a93fb6aaef9f23d36 (HEAD -> master) commit V6
+  2186ceb64bda700cf63216baeac2b4249a437774 commit V5
+  62e9606b58cad222d0347aa1b21c96b535543ae2 commit V4
+  fd00e4373bb3d17e5902682f4f201f25378bff11 Commit V3
+  7365675ad0c4b1c5f3c0727eb55f9a0a38e1157f commit V2
+  5a264bcccda70d81daa96d4839350185ef578d17 First v1 commit
+
+2. $ git log --pretty=format:"%h - %an, %ar: %s"
+
+  It shows like this -
+
+  3a065b2 - Bhushan kumar, 16 minutes ago: commit V6
+  2186ceb - Bhushan kumar, 47 minutes ago: commit V5
+  62e9606 - Bhushan kumar, 2 hours ago: commit V4
+  fd00e43 - Bhushan kumar, 2 hours ago: Commit V3
+  7365675 - Bhushan kumar, 2 hours ago: commit V2
+  5a264bc - Bhushan kumar, 3 hours ago: First v1 commit
+
+3. git log -S "kumar"
+
+- It tell us when "kumar" was add in that commit , also with time
+
+4. git log --author="Bhushan kumar"
+
+ suppose we work on a team , there are many members or authors there commit their files 
+ so in such a condition we used to get all the commit by any member or author using
+ this command
+
+5. Also more , go on video (timeline 50:50)
