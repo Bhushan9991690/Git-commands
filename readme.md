@@ -1,4 +1,3 @@
-# Token = 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
 
 # -- Configure Git With Username and Email
 

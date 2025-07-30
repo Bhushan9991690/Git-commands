@@ -27,4 +27,4 @@
 
 6. git branch main
 
-7. git merge design
+7. git merge design (It is done on the main branch)
