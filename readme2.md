@@ -24,6 +24,7 @@
 
   - git add .
   - git commit -m "Added working file"
+  - git push origin working
 
 6. git branch main
 
